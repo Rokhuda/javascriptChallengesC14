@@ -1,5 +1,5 @@
 //1
-
+function dayTime(){
 function dayy(){
   let day = new Date();
   let today = day.getDate();
@@ -35,12 +35,13 @@ return hours +" "+ meridies+" : "+minutes+" : "+" "+seconds;
 
 console.log( "Today is: " + dayy()+" . Current time is : " +timee());
 
-
+}
 
 // 2
-function 
-let document.URL
-
+function loadURL(){
+  let getUrl = document.URL;
+  return getUrl;
+}
 //3
 
 
@@ -59,7 +60,7 @@ function largest() {
     let num1 = (prompt('Enter a number'));
     let num2 = (prompt('Enter a number'));
     let num3 = (prompt('Enter a number'));
-    var large = Math.max(num1, num2, num3);
+    let large = Math.max(num1, num2, num3);
     return large
   }
     console.log(largest());
@@ -68,15 +69,15 @@ function largest() {
 //5
 
 
-str = prompt("Tell me your deepest darkest secret");
 
-function titleCasestr() {
+
+function capitalText() {
   
-  
-  sentence = str.split(' ');
+  text = prompt("Tell me your deepest darkest secret");
+  sentence = text.split(' ');
+   let i = 0;
  
- 
-  for (var i = 0; i < sentence.length; i++) {
+  for ( i = 0; i < sentence.length; i++) {
     sentence[i] = sentence[i].charAt(0).toUpperCase() + sentence[i].slice(1); 
   }
   return sentence.join(' ');
