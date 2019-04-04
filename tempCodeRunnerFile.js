@@ -1,1 +1,0 @@
-text = prompt("Tell me your deepest darkest secret");
